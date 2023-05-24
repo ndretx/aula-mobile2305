@@ -1,20 +1,16 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import React from 'react';
+import {  View } from 'react-native';
+import { MapPage} from './src/pages/maps';
+import  MenuBar  from './src/pages/maps/components/menubar';
+import { SearchArea } from './src/pages/maps/components/searcharea';
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.tsx to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+   <View>
+    <MenuBar/>
+    <SearchArea/>
+    <MapPage/>
+   </View>
   );
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});

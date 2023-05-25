@@ -26,12 +26,17 @@ export default class MenuBar extends Component {
             top: 40,
             left: 5,
             flex: 1,
-            height: 40,
-            width: "100%",
+            height: "10%",
+            width: "90%",
             marginHorizontal: 16,
             flexDirection: 'row',
-            backgroundColor: 'transparent',
+            backgroundColor: 'white',
+            borderRadius: 14,
             borderColor: "black",
+            textAlign: 'justify',
+            
+            
+            
             
             
         },
@@ -42,7 +47,8 @@ export default class MenuBar extends Component {
             fontSize: 16,
             marginHorizontal: 98,
             opacity: .5, 
-            
+            justifyContent: 'center',
+            marginVertical: 16
         },
 
     })

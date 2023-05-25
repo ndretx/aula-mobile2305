@@ -1,18 +1,19 @@
 import { Component } from "react";
 import { View, StyleSheet, Text } from "react-native";
-import Ionicons from '@expo/vector-icons/Ionicons';
+import { Entypo } from '@expo/vector-icons'; 
+import { FontAwesome } from '@expo/vector-icons'; 
 
 export default class MenuBar extends Component {
 
     render() {
         return (
             <View style={this.styles.container}>
-                <Ionicons name="md-checkmark-circle" size={32} color="green" />
-                <Text>
+               <Entypo name="menu" size={24} color="black" />
+                <Text style={this.styles.text}>
                     Titulo Teste
                 </Text>
-                <Ionicons name="md-checkmark-circle" size={32} color="green" />
-                <Ionicons name="md-checkmark-circle" size={32} color="green" />
+                <FontAwesome name="filter" size={24} color="black" />
+                <Entypo name="paper-plane" size={24} color="black" />
 
 
             </View>
@@ -32,7 +33,17 @@ export default class MenuBar extends Component {
             backgroundColor: 'transparent',
             borderColor: "black",
             
-        }
+            
+        },
+        text: {
+            
+            color: "black",
+            fontWeight: "700",
+            fontSize: 16,
+            marginHorizontal: 98,
+            opacity: .5, 
+            
+        },
 
     })
 }
